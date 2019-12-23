@@ -2,6 +2,7 @@
 
 Finish implementing the provided HTTP request handler. **Do NOT use Express.**
   * [ ] A POST request to a route should increment that endpoint's count on `globalCounter`.
+  
   * [ ] A GET request to a route should return the value stored at that endpoint's property on `globalCounter`.
   * [ ] A GET request to an undefined route should return an empty response.
 
