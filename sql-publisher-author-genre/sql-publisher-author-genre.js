@@ -9,11 +9,17 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema =  Schemas.FIX_ME; // TODO: Update this constant
+var sqlPublisherAuthorSchema =  Schemas.OPTION_6; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
 
-var sqlPublisherGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
+// publisher, has many authors. author, has many publishers. the relationship is many to many so we need one more table (publisher_author) to handel this relationship. 
+
+var sqlPublisherGenreSchema =  Schemas.OPTION_4; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
 
-var sqlAuthorGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
+// genre, has many publishers. publisher, has one genre. so the relationship is one to many so id_genre is a foreign in publisher table 
+
+var sqlAuthorGenreSchema =  Schemas.OPTION_6; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
+
+// genre, has many author. author, has many genre. so the relationship is many to many so we need one more table (author_genre) to handel this relationship.
