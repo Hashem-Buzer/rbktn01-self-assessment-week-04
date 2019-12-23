@@ -12,11 +12,33 @@ var server = http.createServer(function(request, response) {
     // YOUR CODE HERE
   } else if (request.method === 'GET') {
     // YOUR CODE HERE
+    if (request.method ==='POST' && property !== "") {
+    if(!globalCounter [property]) {
+      globalCounter [property] = 0;
+    }
+    globalCounter[property]+= 1;
+
+    console.log(globalCounter)
+
+    response.writeHead(201);
+
+    response.end();
+
+  } else if (request.method=== 'GET' && property !== "") {
+    console.log(property)
+
+    response.writeHead(200);
+    if(!globalCounter[property]) {
+      response.end();
+    } else {
+      response.end(globalCounter[property].toString());
   } else {
+
     response.statusCode = 404;
     response.end();
   }
-});
+};
+
 
 // Do not edit this line
 module.exports = server;
