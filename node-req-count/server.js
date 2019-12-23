@@ -3,15 +3,17 @@ var http = require('http');
 var path = require('path');
 
 var globalCounter = {};
-
+var counter = 0;
 var server = http.createServer(function(request, response) {
   var endpoint = url.parse(request.url, true).pathname;
   var property = endpoint.replace(/^\//, '');
 
   if (request.method === 'POST') {
-    // YOUR CODE HERE
+    globalCounter[endpoint] = counter++;
+    console.log(globalCounter[endpoint])
   } else if (request.method === 'GET') {
-    // YOUR CODE HERE
+    // response.write(globalCounter[endpoint])
+    console.log(globalCounter[endpoint])
   } else {
     response.statusCode = 404;
     response.end();
