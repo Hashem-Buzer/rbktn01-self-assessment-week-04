@@ -9,11 +9,14 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema =  Schemas.FIX_ME; // TODO: Update this constant
+var sqlPublisherAuthorSchema =  Schemas.OPTION_4; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
+// One publisher can have many authors but an author can only have one publisher so it's one to many from the publisher's perspective.
 
-var sqlPublisherGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
+var sqlPublisherGenreSchema =  Schemas.OPTION_3; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
+// One genre can have many publishers but a publisher can only have one genre so it's one to many from the genre's perspective.
 
-var sqlAuthorGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
+var sqlAuthorGenreSchema =  Schemas.OPTION_3; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
+// One genre can have many authors but an author can only have one genre so it's one to many from the genre's perspective.
