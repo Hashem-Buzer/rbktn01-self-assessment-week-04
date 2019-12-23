@@ -14,7 +14,21 @@ var getWordCount = function(filePath, callback) {
 };
 
 var getTotalWordCount = function(filePathOne, filePathTwo, callback) {
-  // YOUR CODE HERE
-};
+  getWordCount(filepath1, (err,data)=>{
+    if(err){
+      throw new Error('ERORR!!');
+    }else{
+      getWordCount(filePathTwo,(err,data2)=>{
+        if(err){
+          throw new Error('ERRORR!!')
+        }else{
+          callback(data+data2);
+        }
+      })
+    }
+  })
 
-module.exports = getTotalWordCount;
+
+};
+var filepath1 = path.join(__dirname, 'files\\fileOne.txt');
+var filepath2 = path.join(__dirname, 'files\\fileTwo.txt');
