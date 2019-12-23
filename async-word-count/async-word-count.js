@@ -15,6 +15,16 @@ var getWordCount = function(filePath, callback) {
 
 var getTotalWordCount = function(filePathOne, filePathTwo, callback) {
   // YOUR CODE HERE
+  fs.readFile('/async-word-count/files', (err, files) => {
+    if (err) throw err;
+    for (let index = 0; index < files.length; index++) {
+      fs.readFile(files[i], (err,data )=> {
+        if (err) throw err;
+        callback(data)
+      }
+      
+    }
+  });
 };
 
 module.exports = getTotalWordCount;

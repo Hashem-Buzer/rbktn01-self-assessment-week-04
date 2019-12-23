@@ -9,11 +9,15 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema =  Schemas.FIX_ME; // TODO: Update this constant
+var sqlPublisherAuthorSchema =  Schemas.OPTION_6; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
+// beacuse it is meny to meny realation and we need a new table to store the id of each one of them 
 
-var sqlPublisherGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
 
-var sqlAuthorGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
+var sqlPublisherGenreSchema =  Schemas.OPTION_4; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
+// becuse it is one to meny relation and the publidher needs to keep a refrens of the ganra id
+
+var sqlAuthorGenreSchema =  Schemas.OPTION_6; // TODO: Update this constant
+// TODO: Write a comment here explaining your choice
+// same as first one
