@@ -8,12 +8,15 @@ var Schemas = {
   OPTION_5: 'option 5',
   OPTION_6: 'option 6'
 };
+// publisher many =>  authors many
+// author many => genres many
+// genre many => one publisher
 
-var sqlPublisherAuthorSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+var sqlPublisherAuthorSchema =  Schemas.OPTION_6; 
+// because in many TO many, we need to create a separate table to hold the foreign keys, because that more efficient than putting the id for each table in the other table.
 
-var sqlPublisherGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+var sqlPublisherGenreSchema =  Schemas.OPTION_4; 
+// because in one TO many, we need to put the One Id into the many table 
 
-var sqlAuthorGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+var sqlAuthorGenreSchema =  Schemas.OPTION_6; 
+// because in many TO many, we need to create a separate table to hold the foreign keys, because that more efficient than putting the id for each table in the other table.
