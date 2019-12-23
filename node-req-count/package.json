@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "request": "^2.72.0"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.2"
   }
 }
