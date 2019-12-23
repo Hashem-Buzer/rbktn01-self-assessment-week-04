@@ -9,7 +9,16 @@ var server = http.createServer(function(request, response) {
   var property = endpoint.replace(/^\//, '');
 
   if (request.method === 'POST') {
-    // YOUR CODE HERE
+  //   let parsedUrl = url.parse(request.url, true); 
+  //   for(var i = 0;i<Object.keys(globalCounter).length;i++ ){
+  //   if(globalCounter[Object.keys(parsedUrl.Object)[0]]){
+  //     globalCounter[Object.keys(parsedUrl.query)[0]] = globalCounter[Object.keys(parsedUrl.query)[0]] + 1;
+  //   }else{
+  //   globalCounter[Object.keys(parsedUrl.query)[0]] = parsedUrl.query[0]
+  //   globalCounter[Object.keys(parsedUrl.query)[0]] = 1
+  //   }
+  // }
+  //   console.log(globalCounter)
   } else if (request.method === 'GET') {
     // YOUR CODE HERE
   } else {

@@ -15,6 +15,15 @@ var getWordCount = function(filePath, callback) {
 
 var getTotalWordCount = function(filePathOne, filePathTwo, callback) {
   // YOUR CODE HERE
+  // try {
+  //   const data = fs.readFileSync('./files/fileOne.txt', 'utf8')
+  //   console.log(data)
+  // } catch (err) {
+  //   console.error(err)
+  // }
+
 };
 
 module.exports = getTotalWordCount;
+
+getTotalWordCount(null,null,()=>{});
