@@ -9,11 +9,9 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
-
-var sqlPublisherGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
-
-var sqlAuthorGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+var sqlPublisherAuthorSchema = OPTION_3; // TODO: Update this constant
+//one to many relation which we need to have an id for the authors /
+var sqlPublisherGenreSchema = OPTION_3; // TODO: Update this constant
+// many to many one relationship which we need to keep track of publisher id.
+var sqlAuthorGenreSchema = OPTION_6; // TODO: Update this constant
+// many to many relationship which requires a join table
