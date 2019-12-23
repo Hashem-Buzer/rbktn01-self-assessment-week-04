@@ -8,7 +8,7 @@ var Schemas = {
   OPTION_5: 'option 5',
   OPTION_6: 'option 6'
 };
-
+// I didn't understand the Requirements!
 var sqlPublisherAuthorSchema =  Schemas.FIX_ME; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
 
