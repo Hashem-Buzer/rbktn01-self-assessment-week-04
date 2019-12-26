@@ -10,6 +10,7 @@ Additionally, write a comment in `sql-publisher-author-genre.js` to explain your
 
 
 ### Publisher - Author
+//https://cloud.githubusercontent.com/assets/7968370/17832188/d933b1c8-66b1-11e6-84ec-2bd71870eb70.png
 
 ##### Option 0 (below)
 ![pub_auth_option_0](https://cloud.githubusercontent.com/assets/7968370/17832185/d92e9eea-66b1-11e6-9cd5-752d647cdca2.png)
