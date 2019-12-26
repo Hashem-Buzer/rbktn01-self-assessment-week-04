@@ -13,8 +13,24 @@ var getWordCount = function(filePath, callback) {
   });
 };
 
+// i hate callback :(, i didn't know how to even test the code,and i don't think that i can use return and callback, but i did anyways....
+
 var getTotalWordCount = function(filePathOne, filePathTwo, callback) {
-  // YOUR CODE HERE
+  var fileOne = getWordCount(filePathOne, (err, words) => {
+    if (err) {
+      callback(err, null);
+    } else {
+      callback(null, words);
+    }
+  });
+  var fileTwo = getWordCount(filePathTwo, (err, words) => {
+    if (err) {
+      callback(err, null);
+    } else {
+      callback(null, words);
+    }
+  });
+  return fileOne + fileTwo;
 };
 
 module.exports = getTotalWordCount;
