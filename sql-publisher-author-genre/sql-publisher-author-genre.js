@@ -9,11 +9,25 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema =  Schemas.FIX_ME; // TODO: Update this constant
+var sqlPublisherAuthorSchema =  Schemas.OPTION_6; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
+/*
+ * i think that the relation here is many to many 
+ * so we need a join table with the id's for both 
+ * Authors and publisher
+ */
 
-var sqlPublisherGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
+var sqlPublisherGenreSchema =  Schemas.OPTION_5; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
-
-var sqlAuthorGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
+/**
+ * 1 publisher has 1 genre ==> 1 To 1 HERE
+ * 1 genre has many publisher => 1 to many HERE
+ * so in each  pubilsher there is an genre_id
+ * and in each genre there is an publisher_id
+ */
+var sqlAuthorGenreSchema =  Schemas.OPTION_6; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
+/**
+ * Many to many Here, so the best solution is to join
+ * By Id's of both of them
+ */
