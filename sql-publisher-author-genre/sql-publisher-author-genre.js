@@ -9,11 +9,21 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+var sqlPublisherAuthorSchema =  Schemas.OPTION_6;
+/** 
+ *  Each publisher has many author and vice versa.
+ *  So we need an "join table" to map the relationship between them.
+ */
 
-var sqlPublisherGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+var sqlPublisherGenreSchema =  Schemas.OPTION_4;
+/**
+ * Each publisher has one genere and each genere can have many publishers
+ * So we need to use associate each publisher with a genere by adding a genere_id column
+ * This will also reflect that each genere has many publishers relation
+ */
 
-var sqlAuthorGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+var sqlAuthorGenreSchema =  Schemas.OPTION_6;
+/**
+ *  Each author has many generes and vice versa.
+ *  So we need an "join table" to map the relationship between them.
+ */
