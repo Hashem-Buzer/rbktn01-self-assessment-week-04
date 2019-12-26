@@ -15,6 +15,21 @@ var getWordCount = function(filePath, callback) {
 
 var getTotalWordCount = function(filePathOne, filePathTwo, callback) {
   // YOUR CODE HERE
+  getWordCount(filePathOne, (err, countOne) => {
+    if (err) {
+      callback(err, null)
+      return;
+    }
+
+    getWordCount(filePathTwo, (err, countTwo) => {
+      if (err) {
+        callback(err, null);
+        return;
+      }
+      
+      callback(null, countOne + countTwo);
+    });
+  });
 };
 
 module.exports = getTotalWordCount;

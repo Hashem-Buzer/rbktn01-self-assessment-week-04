@@ -9,11 +9,12 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema =  Schemas.FIX_ME; // TODO: Update this constant
+var sqlPublisherAuthorSchema =  OPTION_6; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
-
-var sqlPublisherGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
+// because many to many relationship  requires  a third table  to match the IDs
+var sqlPublisherGenreSchema =  OPTION_4; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
-
-var sqlAuthorGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
+// one to many relationship , cauz each publisher can have only  1 genre 
+var sqlAuthorGenreSchema =  OPTION_6; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
+// many to many .. same as the first one !
