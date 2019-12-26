@@ -1,3 +1,5 @@
+
+
 var fs = require('fs');
 var path = require('path');
 
@@ -14,7 +16,20 @@ var getWordCount = function(filePath, callback) {
 };
 
 var getTotalWordCount = function(filePathOne, filePathTwo, callback) {
-  // YOUR CODE HERE
+	
+	//gets the first wordCount
+	getWordCount( filePathOne, function( error, data1 ) {
+		//handles error (data is null)
+		if( data1 === null ) return;
+	//gets the second wordCount
+		getWordCount( filePathTwo, function( error, data2 ) {
+			//handles error (data is null)
+			if( data2 === null ) return;
+	//passes the wordCounts to the callback
+				callback( data1 + data2 );
+		} );
+	} );
+	
 };
 
 module.exports = getTotalWordCount;
