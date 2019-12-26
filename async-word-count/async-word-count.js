@@ -14,7 +14,33 @@ var getWordCount = function(filePath, callback) {
 };
 
 var getTotalWordCount = function(filePathOne, filePathTwo, callback) {
-  // YOUR CODE HERE
+  var count = 0;
+  getWordCount(filePathOne, (err, wordcount) => {
+    if(err) {
+      callback(err, null);
+      return;
+    }
+    getWordCount(filePathTwo, (err, wordCount2) => {
+      if(err) {
+        callback(err, null);
+        return;
+      }
+      callback(null, wordcount + wordCount2)
+    });
+  });
 };
+
+
+getTotalWordCount(__dirname + '/files/fileOne.txt', __dirname + '/files/fileTwo.txt', (err, word)=> {
+
+  if (err) {
+    console.log(err)
+  } else {
+    console.log(word)
+  }
+});
+
+module.exports = getTotalWordCount;
+
 
 module.exports = getTotalWordCount;
