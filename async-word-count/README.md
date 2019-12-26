@@ -9,3 +9,4 @@ Inside `async-word-count.js`, complete `getTotalWordCount`. `getTotalWordCount` 
 
 * MDN
 * Node docs
+between Signifant progress/attempted.

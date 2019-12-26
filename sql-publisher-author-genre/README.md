@@ -84,3 +84,4 @@ Additionally, write a comment in `sql-publisher-author-genre.js` to explain your
 
 * [junction tables](https://en.wikipedia.org/wiki/Junction_table)
 * This [SQL Wikipedia page](https://en.wikipedia.org/wiki/SQL)
+attempted.
