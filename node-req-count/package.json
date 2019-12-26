@@ -9,6 +9,6 @@
     "start": "node index.js"
   },
   "devDependencies": {
-    "request": "^2.72.0"
+   "request": "^2.88.0"
   }
 }

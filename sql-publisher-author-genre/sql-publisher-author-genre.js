@@ -1,5 +1,5 @@
 var Schemas = {
-  FIX_ME: 'wrong answer',
+  WRONG: 'wrong answer',
   OPTION_0: 'option 0',
   OPTION_1: 'option 1',
   OPTION_2: 'option 2',
@@ -9,11 +9,18 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+var sqlPublisherAuthorSchema =  Schemas.OPTION_6; 
+// its many to many
+//publisher, has many authors
+// author, has many publishers
 
-var sqlPublisherGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
 
-var sqlAuthorGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
-// TODO: Write a comment here explaining your choice
+var sqlPublisherGenreSchema =  Schemas.OPTION_5; 
+// its one to one
+//publisher has one genre
+//genre, has many publishers
+
+var sqlAuthorGenreSchema =  Schemas.OPTION_6; 
+// its many to many
+  // author, has many genres
+  // genre, has many authors
