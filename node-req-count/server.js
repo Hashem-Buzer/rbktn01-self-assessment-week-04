@@ -10,11 +10,17 @@ var server = http.createServer(function(request, response) {
 
   if (request.method === 'POST') {
     // YOUR CODE HERE
+    
+    response._write(endpoint , () => {
+      endpoint.globalCounter ++});
+
   } else if (request.method === 'GET') {
     // YOUR CODE HERE
+    response.
   } else {
     response.statusCode = 404;
     response.end();
+
   }
 });
 
