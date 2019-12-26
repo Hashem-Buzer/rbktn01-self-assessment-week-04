@@ -9,11 +9,12 @@ var Schemas = {
   OPTION_6: 'option 6'
 };
 
-var sqlPublisherAuthorSchema =  Schemas.FIX_ME; // TODO: Update this constant
+var sqlPublisherAuthorSchema =  Schemas.OPTION_6; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
-
-var sqlPublisherGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
+// the relation between publisher and author is many to many so we have to create a third table with both of their primary key as a forgein key and it's the only option like this
+var sqlPublisherGenreSchema =  Schemas.OPTION_4; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
-
-var sqlAuthorGenreSchema =  Schemas.FIX_ME; // TODO: Update this constant
+//the relation between publisher and genre is one to many so we have to add a new column with the primary key of the many side to one side as a forgein key
+var sqlAuthorGenreSchema =  Schemas.OPTION_6; // TODO: Update this constant
 // TODO: Write a comment here explaining your choice
+//the relation is many to many so we have to solve it as the first one 
