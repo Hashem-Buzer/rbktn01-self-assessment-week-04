@@ -15,6 +15,14 @@ var getWordCount = function(filePath, callback) {
 
 var getTotalWordCount = function(filePathOne, filePathTwo, callback) {
   // YOUR CODE HERE
+  //this file does not work with npm start ????????
+  //i don't know how to test it ?
+  // you are making things harder than they should be 
+
+     
+  
+  
+  
 };
 
 module.exports = getTotalWordCount;
